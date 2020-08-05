@@ -2,9 +2,9 @@ package com.test;
 import com.test.study.Dog;
 
 /**
- *@version: 1.0
- *@author: y
- *@date: 2020/08/05 15:07
+ * @version: 1.0
+ * @author: y
+ * @date: 2020/08/05 15:07
  */
 
 public class TestGitHubApplication {
@@ -42,6 +42,7 @@ public class TestGitHubApplication {
     public void setHigh(String high) {
         this.high = high;
     }
+
     public String getBirth() {
         return birth;
     }
@@ -84,16 +85,11 @@ public class TestGitHubApplication {
         test.setWeight("50kg");
         String print = test.toString();
         System.out.println(print);
-        System.out.println("name=" + test.name);
-        System.out.println("age=" + test.age);
-        System.out.println("sex=" + test.sex);
-        System.out.println("birt=" + test.birth);
-        System.out.println("high=" + test.high);
-        System.out.println("weight" + test.weight);
         Dog dog = new Dog();
         dog.setName("小黑");
         dog.setAge(3);
-        dog.toString();
+        String litterdog = dog.toString();
+        System.out.println(litterdog);
 
     }
 
