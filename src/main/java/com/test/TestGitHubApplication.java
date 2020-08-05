@@ -1,4 +1,5 @@
 package com.test;
+import com.test.study.Dog;
 
 /**
  *@version: 1.0
@@ -12,6 +13,7 @@ public class TestGitHubApplication {
     private String sex;
     private String birth;
     private String high;
+    private String weight;
 
     @Override
     public String toString() {
@@ -21,7 +23,16 @@ public class TestGitHubApplication {
                 ", sex='" + sex + '\'' +
                 ", birth='" + birth + '\'' +
                 ", high='" + high + '\'' +
+                ", weight='" + weight + '\'' +
                 '}';
+    }
+
+    public String getWeight() {
+        return weight;
+    }
+
+    public void setWeight(String weight) {
+        this.weight = weight;
     }
 
     public String getHigh() {
@@ -70,6 +81,7 @@ public class TestGitHubApplication {
         test.setSex("man");
         test.setBirth("1999/08/15");
         test.setHigh("185cm");
+        test.setWeight("50kg");
         String print = test.toString();
         System.out.println(print);
         System.out.println("name=" + test.name);
@@ -77,6 +89,12 @@ public class TestGitHubApplication {
         System.out.println("sex=" + test.sex);
         System.out.println("birt=" + test.birth);
         System.out.println("high=" + test.high);
+        System.out.println("weight" + test.weight);
+        Dog dog = new Dog();
+        dog.setName("小黑");
+        dog.setAge(3);
+        dog.toString();
+
     }
 
 }
