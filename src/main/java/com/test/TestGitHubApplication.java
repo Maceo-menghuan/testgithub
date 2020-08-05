@@ -1,5 +1,6 @@
 package com.test;
 
+import com.test.study.Cat;
 import com.test.study.Dog;
 
 /**
@@ -74,6 +75,10 @@ public class TestGitHubApplication {
         test.setHigh("185cm");
         String print = test.toString();
         System.out.println(print);
+        Cat cat = new Cat();
+        cat.setName("小白");
+        cat.setAge(5);
+        cat.setWeight("3kg");
         Dog dog = new Dog();
         dog.setName("小黑");
         dog.setAge(3);
