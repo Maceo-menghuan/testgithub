@@ -1,4 +1,5 @@
 package com.test;
+
 /**
  *@version: 1.0
  *@author: y
@@ -8,14 +9,24 @@ public class TestGitHubApplication {
     private String name;
     private Integer age;
     private String sex;
+    private String birth;
 
     @Override
     public String toString() {
-        return "testgithubapplication{" +
+        return "TestGitHubApplication{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 ", sex='" + sex + '\'' +
+                ", birth=" + birth +
                 '}';
+    }
+
+    public String getBirth() {
+        return birth;
+    }
+
+    public void setBirth(String birth) {
+        this.birth = birth;
     }
 
     public String getName() {
@@ -47,8 +58,13 @@ public class TestGitHubApplication {
         test.setName("zhangsan");
         test.setAge(14);
         test.setSex("man");
+        test.setBirth("1999/08/15");
         String print = test.toString();
         System.out.println(print);
-        System.out.println("name=" + test.name +"\t" + "age=" + test.age + "\t" + "sex=" + test.sex);
+        System.out.println("name=" + test.name);
+        System.out.println("age=" + test.age);
+        System.out.println("sex=" + test.sex);
+        System.out.println("birt=" + test.birth);
     }
+
 }
