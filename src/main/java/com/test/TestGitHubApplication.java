@@ -1,5 +1,7 @@
 package com.test;
 
+import com.test.study.Dog;
+
 /**
  *@version: 1.0
  *@author: y
@@ -72,11 +74,11 @@ public class TestGitHubApplication {
         test.setHigh("185cm");
         String print = test.toString();
         System.out.println(print);
-        System.out.println("name=" + test.name);
-        System.out.println("age=" + test.age);
-        System.out.println("sex=" + test.sex);
-        System.out.println("birt=" + test.birth);
-        System.out.println("high=" + test.high);
+        Dog dog = new Dog();
+        dog.setName("小黑");
+        dog.setAge(3);
+        String litterdog = dog.toString();
+        System.out.println(litterdog);
     }
 
 }
