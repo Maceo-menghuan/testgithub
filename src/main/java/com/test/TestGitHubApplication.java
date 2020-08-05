@@ -1,10 +1,9 @@
 package com.test;
-import com.test.study.Dog;
 
 /**
- * @version: 1.0
- * @author: y
- * @date: 2020/08/05 15:07
+ *@version: 1.0
+ *@author: y
+ *@date: 2020/08/05 15:07
  */
 
 public class TestGitHubApplication {
@@ -13,7 +12,6 @@ public class TestGitHubApplication {
     private String sex;
     private String birth;
     private String high;
-    private String weight;
 
     @Override
     public String toString() {
@@ -23,16 +21,7 @@ public class TestGitHubApplication {
                 ", sex='" + sex + '\'' +
                 ", birth='" + birth + '\'' +
                 ", high='" + high + '\'' +
-                ", weight='" + weight + '\'' +
                 '}';
-    }
-
-    public String getWeight() {
-        return weight;
-    }
-
-    public void setWeight(String weight) {
-        this.weight = weight;
     }
 
     public String getHigh() {
@@ -42,7 +31,6 @@ public class TestGitHubApplication {
     public void setHigh(String high) {
         this.high = high;
     }
-
     public String getBirth() {
         return birth;
     }
@@ -82,15 +70,13 @@ public class TestGitHubApplication {
         test.setSex("man");
         test.setBirth("1999/08/15");
         test.setHigh("185cm");
-        test.setWeight("50kg");
         String print = test.toString();
         System.out.println(print);
-        Dog dog = new Dog();
-        dog.setName("小黑");
-        dog.setAge(3);
-        String litterdog = dog.toString();
-        System.out.println(litterdog);
-
+        System.out.println("name=" + test.name);
+        System.out.println("age=" + test.age);
+        System.out.println("sex=" + test.sex);
+        System.out.println("birt=" + test.birth);
+        System.out.println("high=" + test.high);
     }
 
 }
