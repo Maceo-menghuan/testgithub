@@ -6,16 +6,26 @@ public class Child {
     private String sex;
     private String birth;
     private String high;
+    private Integer grade;
 
     @Override
     public String toString() {
-        return "TestGitHubApplication{" +
+        return "Child{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 ", sex='" + sex + '\'' +
                 ", birth='" + birth + '\'' +
                 ", high='" + high + '\'' +
+                ", grade=" + grade +
                 '}';
+    }
+
+    public Integer getGrade() {
+        return grade;
+    }
+
+    public void setGrade(Integer grade) {
+        this.grade = grade;
     }
 
     public String getHigh() {
@@ -25,6 +35,7 @@ public class Child {
     public void setHigh(String high) {
         this.high = high;
     }
+
     public String getBirth() {
         return birth;
     }
